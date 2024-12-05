@@ -1,0 +1,677 @@
+/*Media - Stylesheet*/
+.hamburger-icon {
+    display: none;
+}
+
+.organize-section .txt .disc br {
+    display: none;
+}
+
+.about .about-text p br {
+    display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1390px) {
+    .container-fluid-class {
+        width: 90%;
+    }
+
+    .about .about-text a span {
+        margin-top: 14px;
+    }
+
+    .testimonials-section .carousel-content .item {
+        grid-template-columns: 230px 1fr;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1024px) {
+
+    .hero-section::before,
+    .hero-section::after {
+        background-position: right bottom;
+        background-size: contain;
+    }
+
+    .hero-section .hero-content-container {
+        grid-template-columns: 438px 408px;
+        justify-content: space-between;
+    }
+
+    .hero-section .hero-content-container .txt h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .hero-section .hero-content-container .txt p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .hero-section .hero-content-container .form {
+        padding: 32px 24px;
+    }
+
+    .hero-section .hero-content-container .form label span {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .hero-section .hero-content-container .form .inp {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .hero-section .hero-content-container .form .sel {
+        padding: 7px 11px;
+    }
+
+    .hero-section .hero-content-container .form .empty-tooltip {
+        padding: 12px 13px;
+    }
+
+    .hero-section .hero-content-container .form .empty-tooltip p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .hero-section .hero-content-container .form .btn-row a {
+        width: 186px;
+        height: 50px;
+    }
+
+    .hero-section .hero-content-container .form .btn-row .a span {
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .testimonials-section .container-fluid-class {
+        grid-template-columns: 8% 1fr 8%;
+    }
+
+    .testimonials-section .arrow svg {
+        width: 16px;
+    }
+
+    .testimonials-section .carousel-content .item .txt {
+        padding: 35px 50px;
+        padding-top: 46px;
+    }
+
+    .testimonials-section .carousel-content .item .txt .name {
+        font-size: 22px;
+        line-height: 29px;
+        margin-bottom: 11px;
+    }
+
+    .testimonials-section .carousel-content .item .txt .message {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .testimonials-section .carousel-content .item .txt .quote {
+        width: 50px;
+        top: 48px;
+    }
+
+    .testimonials-section .carousel-content .owl-dots .owl-dot span {
+        width: 14px;
+        height: 14px;
+    }
+
+    .organize-section .txt .itl {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .organize-section .txt .disc {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .organize-section .btns .c-btn {
+        font-size: 16px;
+        line-height: 18px;
+        height: 88px;
+    }
+
+    .organize-section .btns .c-btn span {
+        margin-left: 10px;
+        margin-right: -30px;
+    }
+
+    .organize-section .btns .c-btn .tooltp {
+        width: 90%;
+    }
+
+    .organize-section .btns .c-btn .tooltp p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .video-section .txt h5 {
+        font-size: 38px;
+    }
+
+    .video-section .txt .check-box p {
+        font-size: 16px;
+    }
+
+    .video-section .txt .check-box p span {
+        font-size: 20px;
+    }
+
+    .footer-section .copy {
+        font-size: 13px;
+    }
+
+    .footer-section ul li a {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 769px) {
+    .container-fluid-class {
+        width: 93%;
+    }
+
+    .hero-section {
+        background-size: cover;
+    }
+
+    .hero-section .menu-navbar {
+        align-items: start;
+    }
+
+    .hero-section .menu-navbar ul {
+        display: block;
+        text-align: right;
+    }
+
+    .hero-section .menu-navbar ul li {
+        display: inline-block;
+    }
+
+    .hero-section .menu-navbar ul li a {
+        line-height: 41px;
+    }
+
+    .hero-section .menu-navbar ul li:last-child {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .hero-section .menu-navbar ul li:last-child::after {
+        width: 0px;
+    }
+
+    .hero-section .hero-content-container {
+        grid-template-columns: auto;
+        row-gap: 56px;
+        padding-top: 56px;
+        padding-bottom: 185px;
+    }
+
+    .hero-content-text {
+        text-align: center;
+    }
+
+    .hero-content-text p {
+        padding: 0px 64px;
+    }
+
+    .hero-section .hero-content-container .form {
+        width: 472px;
+        margin: auto;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+        background-position: bottom left;
+        background-size: 189%;
+        height: 133px;
+    }
+
+    .about {
+        padding-top: 10px;
+    }
+
+    .about .about-imgs {
+        column-gap: 22px;
+        margin-bottom: 64px;
+    }
+
+    .about .about-text h3 {
+        font-size: 36px;
+    }
+
+    .about .about-text p {
+        column-count: 2;
+    }
+
+    .about .about-text a span {
+        margin-top: 23px;
+    }
+
+    .testimonials-section .container-fluid-class {
+        grid-template-columns: 100%;
+    }
+
+    .testimonials-section .arrow {
+        display: none;
+    }
+
+    .testimonials-section .carousel-content .item {
+        grid-template-columns: 198px 1fr;
+        padding: 10px 0%;
+        column-gap: 25px;
+    }
+
+    .testimonials-section .carousel-content .item .txt {
+        padding: 33px 36px;
+    }
+
+    .testimonials-section .carousel-content .item .txt .name {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 9px;
+    }
+
+    .testimonials-section .carousel-content .item .txt .message {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .testimonials-section .carousel-content .item .txt .quote {
+        width: 40px;
+        height: 31px;
+        top: 33px;
+        right: 45px;
+    }
+
+    .testimonials-section .carousel-content .owl-dots {
+        margin-top: 50px;
+    }
+
+    .organize-section .txt {
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+
+    .organize-section .txt .disc {
+        column-gap: 24px;
+    }
+
+    .organize-section .btns {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+    }
+
+    .organize-section .btns .c-btn .tooltp {
+        width: 92%;
+    }
+
+    .video-section {
+        grid-template-columns: 1fr;
+    }
+
+    .video-section .txt h5 {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    .video-section .txt {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .video-section .txt .video-bac {
+        top: -26%;
+        left: -13%;
+        width: 124%;
+        height: 127%;
+        z-index: -1;
+        transform: rotate(90deg);
+    }
+
+    .video-section .txt .video-bac2 {
+        left: -13%;
+        top: -23%;
+        z-index: -2;
+    }
+
+    .video-section .video-img .play {
+        width: 155px;
+        height: 155px;
+        bottom: auto;
+        top: -12px;
+    }
+
+    .video-section .video-img .play svg {
+        width: 94px;
+        height: 96px;
+    }
+
+    .video-section .video-img .play::after,
+    .video-section .video-img .play:hover::after {
+        width: 200px;
+        height: 200px;
+        left: -25px;
+    }
+
+    .video-section .video-img .sm-logo {
+        right: 0px;
+        left: 0px;
+        margin: auto;
+    }
+
+    .footer-section {
+        padding: 32px 0px;
+    }
+
+    .footer-section .container-fluid-class {
+        grid-template-columns: auto;
+        justify-content: center;
+        row-gap: 7px;
+    }
+
+    .footer-section ul {
+        text-align: center;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 569px) {
+    .hero-section {
+        background-size: 219% auto;
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding-top: 12px;
+    }
+
+    .hero-section .container-fluid-class::before {
+        background: linear-gradient(180deg, rgb(25 77 65 / 53%) 0%, #1b4835 34%);
+    }
+
+    .hero-section .menu-navbar {
+        grid-template-columns: 1fr auto;
+        z-index: 2;
+    }
+
+    .hero-section .menu-navbar .logo a img {
+        width: 156px;
+    }
+
+    .hero-section .menu-navbar ul {
+        text-align: left;
+        grid-column: span 2;
+        display: none;
+        position: absolute;
+        top: 111%;
+        width: 100%;
+        background-color: #1c4f43;
+    }
+
+    .hero-section .menu-navbar ul li {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .hero-section .menu-navbar ul li a {
+        line-height: 38px;
+        font-size: 13px;
+        display: block;
+        padding: 0px 16px;
+    }
+
+    .hero-section .menu-navbar ul li:last-child {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .hero-section .hero-content-container .txt h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero-section .hero-content-container .txt p {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0px 0px;
+    }
+
+    .hero-section .hero-content-container {
+        padding-top: 44px;
+        padding-bottom: 175px;
+        row-gap: 36px;
+    }
+
+    .hero-section .hero-content-container .form {
+        width: 100%;
+        padding: 36px 16px;
+        padding-bottom: 56px;
+    }
+
+    .hero-section .hero-content-container .form h2 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 37px;
+    }
+
+    .hero-section .hero-content-container .form .inp-row {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+    .hero-section .hero-content-container .form label span {
+        font-size: 14px;
+        padding-top: 14px;
+    }
+
+    .hero-section .hero-content-container .form .empty-tooltip {
+        left: 0px;
+        right: 0px;
+    }
+
+    .hero-section .hero-content-container .form .btn-row a {
+        width: 100%;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+        background-size: 393%;
+    }
+
+    .about {
+        padding-top: 0px;
+        padding-bottom: 86px;
+    }
+
+    .about .about-imgs {
+        display: none;
+    }
+
+    .about .about-text h3 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 18px;
+    }
+
+    .about .about-text p {
+        column-count: 1;
+    }
+
+    .about .about-text p br {
+        display: block;
+    }
+
+    .testimonials-section .carousel-content .item {
+        padding: 0px 0%;
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+    }
+
+    .testimonials-section .carousel-content .item .img {
+        background-color: var(--background-dark);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        overflow: unset;
+    }
+
+    .testimonials-section .carousel-content .item .img img {
+        height: 170px;
+        width: 51%;
+        margin-left: 32px;
+        margin-top: -60px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .testimonials-section .carousel-content .item .txt {
+        padding: 48px 32px;
+        padding-top: 30px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        overflow: unset;
+        position: relative;
+    }
+
+    .testimonials-section .carousel-content .item .txt .quote {
+        top: auto;
+        bottom: 100%;
+        width: 60px;
+        height: 47px;
+        right: 35px;
+    }
+
+    .testimonials-section .carousel-content .owl-dots {
+        margin-top: 64px;
+    }
+
+    .organize-section {
+        padding: 85px 0px;
+    }
+
+    .organize-section h5 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .organize-section .txt {
+        row-gap: 26px;
+    }
+
+    .organize-section .txt .disc {
+        column-count: 1;
+    }
+
+    .organize-section .txt .disc br {
+        display: block;
+    }
+
+    .organize-section .btns {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 16px;
+    }
+
+    .organize-section .btns .c-btn {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .organize-section .btns .c-btn .tooltp {
+        width: 100%;
+    }
+
+    .video-section .txt {
+        padding: 62px 6% 50px 6%;
+    }
+
+    .video-section .txt .video-bac,
+    .video-section .txt .video-bac2 {
+        top: auto;
+        bottom: -152px;
+        left: -13%;
+        width: 220%;
+        height: 175%;
+    }
+
+    .video-section .txt .video-bac2 {
+        left: -11%;
+    }
+
+    .video-section .txt h5 {
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        padding: 0px 44px;
+        margin-bottom: 36px;
+    }
+
+    .video-section .txt .check-box {
+        margin-bottom: 16px;
+    }
+
+    .video-section .txt .check-box p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .video-section .txt .check-box p span {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    .video-section .video-img .play {
+        transform: scale(0.7);
+        top: -34px;
+    }
+
+    .video-section .video-img .bac {
+        width: 150%;
+    }
+
+    .video-section .video-img::after {
+        background: rgb(25 77 68 / 0%);
+    }
+
+    .footer-section {
+        padding: 34px 0px;
+    }
+
+    .footer-section .container-fluid-class::after {
+        content: none;
+    }
+
+    .footer-section .copy {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .footer-section ul li a {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .footer-section ul li::after {
+        height: 12px;
+        width: 1px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 360px) {
+
+    .video-section .txt .video-bac,
+    .video-section .txt .video-bac2 {
+        width: 255%;
+        height: 175%;
+    }
+}

@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get an Intervention</title>
+
+    <!--fonts files-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <!--stylesheet-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive_styles.css" rel="stylesheet" type="text/css" />
+
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--owl carousel-->
+    <link href='css/owl.carousel.min.css' rel="stylesheet" type="text/css" />
+    <script src='js/owl.carousel.min.js'></script>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container-fluid-class">
+            <div class="menu-navbar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/img/logo.svg" />
+                    </a>
+                </div>
+                <div class="hamburger-icon">
+                    <img src="assets/img/icon/hamburger-icon.svg" />
+                </div>
+                <ul class="upper-case">
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">call now for a consult <span>123.456.7890</span></a></li>
+                </ul>
+            </div>
+            <div class="hero-content-container">
+                <div class="txt">
+                    <h1 class="upper-case"><span>get an</span>intervention</h1>
+                    <p>Showing greater respect to older adults can be done in several ways :
+                        acknowledging and putting to use the talents and skills of older adults; creating
+                        intergenerational initiatives; and allowing older adults to stay active and independent
+                        for as long as possible.</p>
+                </div>
+                <div class="form">
+                    <h2>Contact Us</h2>
+                    <div class="inp-row">
+                        <div class="inp-box">
+                            <input class="inp" id="f-name" type="text" />
+                            <label for="f-name"><span>First Name</span></label>
+                            <div class="empty-tooltip">
+                                <p>This field can't be empty. Please fill it in.</p>
+                            </div>
+                        </div>
+                        <div class="inp-box">
+                            <input class="inp" id="l-name" type="text" />
+                            <label for="l-name"><span>Last Name</span></label>
+                            <div class="empty-tooltip">
+                                <p>This field can't be empty. Please fill it in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inp-row">
+                        <div class="inp-box">
+                            <input class="inp" id="b-name" type="text" />
+                            <label for="b-name"><span>Business Email</span></label>
+                            <div class="empty-tooltip">
+                                <p>This field can't be empty. Please fill it in.</p>
+                            </div>
+                        </div>
+                        <div class="inp-box">
+                            <input class="inp" id="c-name" type="text" />
+                            <label for="c-name"><span>Company</span></label>
+                            <div class="empty-tooltip">
+                                <p>This field can't be empty. Please fill it in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drop-row">
+                        <select onchange="myFunction()" id="country" class="inp sel focus" placeholder="Country">
+                            <option value=""></option>
+                        </select>
+                        <label for="country"><span>Country</span></label>
+                        <div class="empty-tooltip">
+                            <p>This field can't be empty. Please fill it in.</p>
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <a onclick="validate()">
+                            <span class="a">
+                                <img src="assets/img/icon/fly.svg" />
+                                <span>Submit</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section -->
+    <section class="about">
+        <div class="container-fluid-class">
+            <div class="about-imgs">
+                <img src="assets/img/we-understand/wu-1.png" />
+                <img src="assets/img/we-understand/wu-2.png" />
+                <img src="assets/img/we-understand/wu-3.png" />
+            </div>
+            <div class="about-text">
+                <h3 class="upper-case"><span>we</span> understand</h3>
+                <p>
+                    Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age.  Engaging them in leisure activities and volunteer work is important.
+                    Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to exchange their services and skills with others for the mutual benefit of the neighborhood or community). Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.
+                    <br /><br />
+                    To stimulate social contacts, neighborhood initiatives can be developed. Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships.
+                    <a href="#"><span>92% Success Rate <img src="assets/img/icon/Arrow.svg" /></span></a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials section -->
+    <scetion class="testimonials-section">
+        <div class="container-fluid-class">
+            <div class="arrow arrow-left">
+                <svg width="25" height="40" viewBox="0 0 25 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.24 35.76L8.47999 20L24.24 4.24L20 -3.70673e-07L-7.78829e-06 20L20 40L24.24 35.76Z"
+                        fill="#EAEAEA" />
+                </svg>
+            </div>
+            <div class="carousel-content owl-carousel owl-theme">
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/testimonials/t-1.png" />
+                    </div>
+                    <div class="txt">
+                        <p class="name">Abbie Harvey</p>
+                        <p class="message">I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.</p>
+                        <img class="quote" src="assets/img/icon/quote.svg" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/testimonials/t-2.png" />
+                    </div>
+                    <div class="txt">
+                        <p class="name">John Doe</p>
+                        <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation. Lorem ipsum dolor sit amet, consectetur!</p>
+                        <img class="quote" src="assets/img/icon/quote.svg" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="assets/img/testimonials/t-3.png" />
+                    </div>
+                    <div class="txt">
+                        <p class="name">Susan Smith</p>
+                        <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation. Lorem ipsum dolor sit amet, consectetur!</p>
+                        <img class="quote" src="assets/img/icon/quote.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="arrow arrow-right">
+                <svg width="25" height="40" viewBox="0 0 25 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.76001 4.24L16.52 20L0.76001 35.76L5.00001 40L25 20L5.00001 0L0.76001 4.24Z"
+                        fill="#EAEAEA" />
+                </svg>
+            </div>
+        </div>
+    </scetion>
+    <!-- we can organize everything section -->
+    <section class="organize-section">
+        <div class="container-fluid-class">
+            <h5 class="upper-case"><b><span>we</span> can organize everything</b></h5>
+            <div class="txt">
+                <p class="itl"><span>interventions</span> should focus on older adult’s desire for connectedness, participation and independence.</p>
+                <p class="disc">
+                    Loneliness and social isolation are growing public health concerns in our aging society. Whilst these experiences occur across the life span, 50% of individuals aged over 60 are at risk of social isolation and one-third will experience some degree of loneliness later in life. It is vital to reduce loneliness and social isolation among older adults.
+                    <br /><br />
+                    The methodology framework proposed by Asked and O’Malley and further developed by Levac, et al. was used to guide the scoping review process. A total of 33 reviews met the inclusion criteria, evaluating a range of interventions targeted at older people residing in the community or institutionalised settings. 
+                </p>
+            </div>
+            <div class="btns">
+                <a class="c-btn" href="#">
+                    Needs Assesment
+                    <span></span>
+                    <div class="tooltp">
+                        <p>The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program. </p>
+                    </div>
+                </a>
+                <a class="c-btn" href="#">Treatment Planning &<br />Placement<span></span>
+                    <div class="tooltp">
+                        <p>Patients can better understand medical procedures, discharge instructions, etc.</p>
+                    </div>
+                </a>
+                <a class="c-btn" href="#">Transportation & Logistics<span></span>
+                    <div class="tooltp">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore.</p>
+                    </div>
+                </a>
+                <a class="c-btn" href="#">Insuarance Advocacy<span></span>
+                    <div class="tooltp">
+                        <p>We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.</p>
+                    </div>
+                </a>
+                <a class="c-btn" href="#">Employment Advocacy<span></span>
+                    <div class="tooltp">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore.</p>
+                    </div>
+                </a>
+                <a class="c-btn" href="#">Aftercare Planning<span></span>
+                    <div class="tooltp">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- video section -->
+    <section class="video-section">
+        <div class="txt">
+            <div class="box">
+                <h5 class="upper-case"><span>watch</span> the video</h5>
+                <div class="check-box">
+                    <img src="assets/img/icon/checkmark.svg" />
+                    <p>
+                        <span>Needs Assesment</span>
+                        The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program. 
+                    </p>
+                </div>
+                <div class="check-box">
+                    <img src="assets/img/icon/checkmark.svg" />
+                    <p>
+                        <span>Insuarance Advocacy</span>
+                        We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.
+                    </p>
+                </div>
+                <div class="check-box">
+                    <img src="assets/img/icon/checkmark.svg" />
+                    <p>
+                        <span>Treatment Planning & Placement</span>
+                        Patients can better understand medical procedures, discharge instructions, etc.
+                    </p>
+                </div>
+            </div>
+            <img class="video-bac" src="assets/img/video-section-color-img.png" />
+            <img class="video-bac video-bac2" src="assets/img/video-section-black-img.png" />
+        </div>
+        <div class="video-img" onclick="playPause()">
+            <video id="sampleVideo" class="bac" width="320" height="240">
+                <source src="assets/video/taking-care.mp4" type="video/mp4">
+            </video>
+            <span class="play" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                </svg>
+            </span>
+            <img class="sm-logo" src="assets/img/logo.svg" />
+        </div>
+    </section>
+    <!-- footer section -->
+    <section class="footer-section">
+        <div class="container-fluid-class">
+            <p class="copy">@2019 Get an Intervention Inc. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> -->
+
+    <script src="js/main.js"></script>
+    <script src="js/countries.js"></script>
+</body>
+
+</html>
