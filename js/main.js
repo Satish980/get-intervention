@@ -51,17 +51,17 @@ $(".hamburger-icon").click(() => {
 
 const validate = () => {
     // Remove all existing error states first
-    $(".inp-box .inp").each(function() {
+    $(".form-input-box .form-input").each(function() {
         $(this).parent().removeClass('empty');
     });
-    $('.drop-row').removeClass('empty');
+    $('.form-input-select-row').removeClass('empty');
 
     // Check fields one by one and show first error found
     let isValid = true;
     let num = 0;
 
     // Check each input field
-    const inputs = $(".inp-box .inp");
+    const inputs = $(".form-input-box .form-input");
     for(let i = 0; i < inputs.length; i++) {
         if (!$(inputs[i]).val()) {
             $(inputs[i]).parent().addClass('empty');
@@ -73,8 +73,8 @@ const validate = () => {
     }
 
     // Only check dropdown if no input field errors
-    if (isValid && $('.drop-row select').val() === '') {
-        $('.drop-row').addClass('empty');
+    if (isValid && $('.form-input-select-row select').val() === '') {
+        $('.form-input-select-row').addClass('empty');
         isValid = false;
     } else if (isValid) {
         num += 1;
@@ -86,12 +86,12 @@ const validate = () => {
 };
 
 $(document).click(() => {
-    $(".inp-box .inp").each(function() {
+    $(".form-input-box .form-input").each(function() {
         $(this).parent().removeClass('empty');
     });
-    $('.drop-row').removeClass('empty');
+    $('.form-input-select-row').removeClass('empty');
 });
 
-$(".btn-row").click((e) => {
+$(".form-input-button-row").click((e) => {
     e.stopPropagation();
 });

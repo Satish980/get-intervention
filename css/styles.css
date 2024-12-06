@@ -162,7 +162,7 @@ a {
   padding-bottom: 105px;
 }
 
-.hero-section .hero-content-container .txt h1 {
+.hero-section-content-text h1 {
   font-weight: 700;
   margin-bottom: 16px;
   color: white;
@@ -171,32 +171,32 @@ a {
   line-height: 72px;
 }
 
-.hero-section .hero-content-container .txt h1 span {
+.hero-section-content-text h1 span {
   display: block;
 }
 
 @supports (-webkit-text-stroke: 1px rgb(255, 255, 255)) {
-  .hero-section .hero-content-container .txt h1 span {
+  .hero-section-content-text h1 span {
     -webkit-text-stroke: 1px rgb(229 229 229);
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
   }
 }
 
-.hero-section .hero-content-container .txt p {
+.hero-section-content-text p {
   font-size: 18px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 300;
 }
 
-.hero-section .hero-content-container .form {
-  padding: 51px 28px 56px 28px;
+.hero-section-form {
+  padding: 52px 28px 56px 28px;
   background: linear-gradient(180deg, #2A7D6C 0%, rgba(62, 105, 96, 0.62) 100%);
   box-shadow: 0px 10px 50px rgb(0 0 0 / 12%);
   border-radius: 12px;
 }
 
-.hero-section .hero-content-container .form h2 {
+.hero-section-form h2 {
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
@@ -206,18 +206,18 @@ a {
   letter-spacing: 0.7px;
 }
 
-.hero-section .hero-content-container .form .inp-row {
+.form-input-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 16px;
   margin-bottom: 16px;
 }
 
-.hero-section .hero-content-container .form .inp-row .inp-box {
+.form-input-row .form-input-box {
   position: relative;
 }
 
-.hero-section .hero-content-container .form label {
+.hero-section-form label {
   display: flex;
   position: absolute;
   top: 0px;
@@ -225,43 +225,43 @@ a {
   cursor: text;
 }
 
-.hero-section .hero-content-container .form label::before {
+.hero-section-form label::before {
   content: '';
   width: 11px;
   height: 1px;
   background: rgb(197 197 197);
 }
 
-.hero-section .hero-content-container .form label::after {
+.hero-section-form label::after {
   content: '';
   flex-grow: 1;
   height: 1px;
   background: rgb(197 197 197);
 }
 
-.hero-section .hero-content-container .form label span {
+.hero-section-form label span {
   color: rgba(255, 255, 255, 0.7);
   padding: 0px 5px;
   padding-top: 13px;
   transition: all 0.3s ease-in-out;
 }
 
-.hero-section .hero-content-container .form label span::after {
+.hero-section-form label span::after {
   content: '';
   position: absolute;
   width: 100%;
   height: 1px;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   background-color: rgb(197 197 197);
   transition: background-color 0.8s ease-out;
   transition: width 0.5s ease-out;
 }
 
-.hero-section .hero-content-container .form .inp {
+.form-input {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgb(197 197 197);
-  border-top: 0px;
+  border-top: 0;
   border-radius: 2px;
   width: 100%;
   height: 48px;
@@ -270,22 +270,22 @@ a {
   color: #fff;
 }
 
-.hero-section .hero-content-container .form .sel {
+.hero-section-form .sel {
   padding: 14px 11px;
 }
 
-.hero-section .hero-content-container .form .sel option {
+.hero-section-form .sel option {
   color: #333;
 }
 
-.hero-section .hero-content-container .form .inp:focus {
+.form-input:focus {
   border-color: #FFFFFF;
   border-top: 0px;
   background-color: rgb(255 255 255 / 0%);
 }
 
-.hero-section .hero-content-container .form .inp:focus+label span,
-.hero-section .hero-content-container .form .inp.focus+label span {
+.form-input:focus+label span,
+.form-input.focus+label span {
   font-size: 13px;
   z-index: 7;
   padding: 0px 5px;
@@ -294,24 +294,24 @@ a {
   margin-top: -9px;
 }
 
-.hero-section .hero-content-container .form .inp:focus+label span::after,
-.hero-section .hero-content-container .form .inp.focus+label span::after {
+.form-input:focus+label span::after,
+.form-input.focus+label span::after {
   width: 0px;
   top: 5px;
   background-color: rgba(255, 255, 255, 0);
 }
 
-.hero-section .hero-content-container .form .inp:focus+label::before,
-.hero-section .hero-content-container .form .inp.focus+label::before {
+.form-input:focus+label::before,
+.form-input.focus+label::before {
   opacity: 1;
 }
 
-.hero-section .hero-content-container .form .inp:focus+label::after,
-.hero-section .hero-content-container .form .inp.focus+label::after {
+.form-input:focus+label::after,
+.form-input.focus+label::after {
   opacity: 1;
 }
 
-.hero-section .hero-content-container .form .empty-tooltip {
+.empty-tooltip {
   background: #FF7777;
   border-radius: 6px;
   position: absolute;
@@ -326,11 +326,11 @@ a {
   display: none;
 }
 
-.hero-section .hero-content-container .form .empty .empty-tooltip {
+.empty .empty-tooltip {
   display: block;
 }
 
-.hero-section .hero-content-container .form .empty-tooltip p {
+.empty-tooltip p {
   font-size: 13px;
   line-height: 16px;
   color: white;
@@ -338,7 +338,7 @@ a {
   z-index: 4;
 }
 
-.hero-section .hero-content-container .form .empty-tooltip::after {
+.empty-tooltip::after {
   content: '';
   background: #FF7777;
   width: 22px;
@@ -351,8 +351,8 @@ a {
   transform: rotate(45deg);
 }
 
-.hero-section .hero-content-container .form .inp:focus+label span,
-.hero-section .hero-content-container .form .inp.focus+label span {
+.form-input:focus+label span,
+.form-input.focus+label span {
   font-size: 13px;
   z-index: 7;
   padding: 0px 5px;
@@ -361,34 +361,34 @@ a {
   margin-top: -9px;
 }
 
-.hero-section .hero-content-container .form .inp:focus+label span::after,
-.hero-section .hero-content-container .form .inp.focus+label span::after {
+.form-input:focus+label span::after,
+.form-input.focus+label span::after {
   width: 0px;
   top: 5px;
   background-color: rgba(255, 255, 255, 0);
 }
 
-.hero-section .hero-content-container .form .inp:focus+label::before,
-.hero-section .hero-content-container .form .inp.focus+label::before {
+.form-input:focus+label::before,
+.form-input.focus+label::before {
   opacity: 1;
 }
 
-.hero-section .hero-content-container .form .inp:focus+label::after,
-.hero-section .hero-content-container .form .inp.focus+label::after {
+.form-input:focus+label::after,
+.form-input.focus+label::after {
   opacity: 1;
 }
 
-.hero-section .hero-content-container .form .drop-row {
+.form-input-select-row {
   position: relative;
   margin-bottom: 16px;
 }
 
-.hero-section .hero-content-container .form .btn-row {
+.form-input-button-row {
   margin-top: 41px;
   text-align: center;
 }
 
-.hero-section .hero-content-container .form .btn-row a {
+.form-input-button-row a {
   width: 220px;
   height: 56px;
   display: block;
@@ -396,19 +396,19 @@ a {
   transition: all 0.25s ease-in-out;
 }
 
-.hero-section .hero-content-container .form .btn-row a:hover {
+.form-input-button-row a:hover {
   transform: translateY(-3px);
 }
 
-.hero-section .hero-content-container .form .btn-row a:focus {
+.form-input-button-row a:focus {
   transform: translateY(0px);
 }
 
-.hero-section .hero-content-container .form .btn-row a:focus .a {
+.form-input-button-row a:focus .a {
   background: #35BB9C;
 }
 
-.hero-section .hero-content-container .form .btn-row .a {
+.form-input-button-row .a {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
@@ -422,7 +422,7 @@ a {
   cursor: pointer;
 }
 
-.hero-section .hero-content-container .form .btn-row .a span {
+.form-input-button-row .a span {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -430,64 +430,64 @@ a {
   color: white;
 }
 
-/*about*/
-.about {
+/*about-section*/
+.about-section {
   background-color: #F5F5F5;
   padding-top: 80px;
   padding-bottom: 130px;
 }
 
-.about .about-imgs {
+.about-section .about-section-imgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 36px;
   margin-bottom: 64px;
 }
 
-.about .about-imgs img {
+.about-section .about-section-imgs img {
   width: 100%;
   border-radius: 8px;
 }
 
-.about .about-text h3 {
+.about-section .about-section-text h3 {
   font-weight: 900;
   font-size: 41px;
   line-height: 46px;
   margin-bottom: 32px;
-  font-family: 'montserrat-extrabold';
+  font-family: var(--font-family);
 }
 
 @supports (-webkit-text-stroke: 1px rgb(255, 255, 255)) {
-  .about .about-text h3 span {
+  .about-section .about-section-text h3 span {
     -webkit-text-stroke: 1px #333;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
   }
 }
 
-.about .about-text p {
+.about-section-text p {
   font-size: 14px;
   line-height: 24px;
   column-count: 3;
   column-gap: 35px;
 }
 
-.about .about-text a {
+.about-section-text a {
   display: block;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
   transition: all 0.25s ease-in-out;
 }
 
-.about .about-text a:hover {
+.about-section-text a:hover {
   transform: translateY(-4px);
   box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.08);
 }
 
-.about .about-text a:focus {
+.about-section-text a:focus {
   transform: translateY(0px);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
 }
 
-.about .about-text a span {
+.about-section-text a span {
   border: 2px solid var(--color-interactive);
   color: var(--color-interactive);
   display: block;
@@ -496,10 +496,10 @@ a {
   font-weight: 700;
   font-size: 18px;
   border-radius: 4px;
-  margin-top: 34px;
+  margin-top: 10px;
 }
 
-.about .about-text a span img {
+.about-section-text a span img {
   display: inline-block;
   vertical-align: baseline;
   margin-left: 8px;
@@ -524,30 +524,30 @@ a {
   text-align: right;
 }
 
-.testimonials-section .carousel-content {
+.carousel-content {
   overflow: hidden;
 }
 
-.testimonials-section .carousel-content .item {
+.carousel-item {
   display: grid;
   grid-template-columns: 270px 1fr;
   column-gap: 34px;
   padding: 20px 2%;
 }
 
-.testimonials-section .carousel-content .item .img {
+.carousel-item .img {
   overflow: hidden;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: 0px 0px 20px rgb(17 17 17 / 8%);
 }
 
-.testimonials-section .carousel-content .item .img img {
+.carousel-item .img img {
   height: 100%;
   object-fit: cover;
 }
 
-.testimonials-section .carousel-content .item .txt {
+.carousel-item .txt {
   box-shadow: 0px 0px 14px rgb(17 17 17 / 15%);
   background-color: var(--color-background-dark);
   color: #fff;
@@ -558,28 +558,28 @@ a {
   border-bottom-right-radius: 10px;
 }
 
-.testimonials-section .carousel-content .item .txt .name {
+.carousel-item .txt .name {
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 16px;
 }
 
-.testimonials-section .carousel-content .item .txt .message {
+.carousel-item .txt .message {
   font-style: italic;
   font-weight: 300;
   font-size: 17px;
   line-height: 28px;
 }
 
-.testimonials-section .carousel-content .item .txt .quote {
+.carousel-item .txt .quote-icon {
   width: 60px;
   position: absolute;
   top: 40px;
   right: 75px;
 }
 
-.testimonials-section .carousel-content .owl-dots {
+.carousel-content .owl-dots {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
@@ -587,7 +587,7 @@ a {
   margin-top: 56px;
 }
 
-.testimonials-section .carousel-content .owl-dots .owl-dot span {
+.carousel-content .owl-dots .owl-dot span {
   width: 16px;
   height: 16px;
   background: #EAEAEA;
@@ -595,7 +595,7 @@ a {
   border-radius: 11px;
 }
 
-.testimonials-section .carousel-content .owl-dots .owl-dot.active span {
+.carousel-content .owl-dots .owl-dot.active span {
   background-color: var(--color-interactive);
 }
 
@@ -608,7 +608,7 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 46px;
-  font-family: 'montserrat-extrabold';
+  font-family: var(--font-family);
   margin-bottom: 32px;
   position: relative;
 }
@@ -622,7 +622,7 @@ a {
 
 .organize-section h5::after {
   content: '';
-  background-color: #EAEAEA;
+  background-color: var(--color-interactive);
   width: 100%;
   height: 1px;
   position: absolute;
@@ -777,7 +777,7 @@ a {
   font-weight: 700;
   font-size: 44px;
   line-height: 52px;
-  font-family: 'montserrat-extrabold';
+  font-family: var(--font-family);
   margin-bottom: 48px;
   color: #fff;
 }

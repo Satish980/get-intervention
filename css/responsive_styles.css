@@ -7,25 +7,35 @@
     display: none;
 }
 
-.about .about-text p br {
+.about-section .about-section-text p br {
     display: none;
 }
 
 @media (min-width: 1024px) and (max-width: 1390px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     .container-fluid-class {
         width: 90%;
     }
 
-    .about .about-text a span {
+    .about-section .about-section-text a span {
         margin-top: 14px;
     }
 
-    .testimonials-section .carousel-content .item {
+    .testimonials-section .carousel-content .carousel-item {
         grid-template-columns: 230px 1fr;
     }
 }
 
 @media (min-width: 770px) and (max-width: 1024px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
     .hero-section::before,
     .hero-section::after {
@@ -38,49 +48,49 @@
         justify-content: space-between;
     }
 
-    .hero-section .hero-content-container .txt h1 {
+    .hero-section-content-text h1 {
         font-size: 42px;
         line-height: 42px;
     }
 
-    .hero-section .hero-content-container .txt p {
+    .hero-section-content-text p {
         font-size: 17px;
         line-height: 24px;
     }
 
-    .hero-section .hero-content-container .form {
+    .hero-section-form {
         padding: 32px 24px;
     }
 
-    .hero-section .hero-content-container .form label span {
+    .hero-section-form label span {
         font-size: 14px;
         padding-top: 10px;
     }
 
-    .hero-section .hero-content-container .form .inp {
+    .form-input {
         height: 40px;
         font-size: 14px;
     }
 
-    .hero-section .hero-content-container .form .sel {
+    .hero-section-form .sel {
         padding: 7px 11px;
     }
 
-    .hero-section .hero-content-container .form .empty-tooltip {
+    .empty-tooltip {
         padding: 12px 13px;
     }
 
-    .hero-section .hero-content-container .form .empty-tooltip p {
+    .empty-tooltip p {
         font-size: 12px;
         line-height: 14px;
     }
 
-    .hero-section .hero-content-container .form .btn-row a {
+    .form-input-button-row a {
         width: 186px;
         height: 50px;
     }
 
-    .hero-section .hero-content-container .form .btn-row .a span {
+    .form-input-button-row .a span {
         font-weight: 600;
         font-size: 17px;
     }
@@ -93,23 +103,23 @@
         width: 16px;
     }
 
-    .testimonials-section .carousel-content .item .txt {
+    .carousel-content .carousel-item .txt {
         padding: 35px 50px;
         padding-top: 46px;
     }
 
-    .testimonials-section .carousel-content .item .txt .name {
+    .carousel-content .carousel-item .txt .name {
         font-size: 22px;
         line-height: 29px;
         margin-bottom: 11px;
     }
 
-    .testimonials-section .carousel-content .item .txt .message {
+    .carousel-content .carousel-item .txt .message {
         font-size: 15px;
         line-height: 21px;
     }
 
-    .testimonials-section .carousel-content .item .txt .quote {
+    .carousel-content .carousel-item .txt .quote-icon {
         width: 50px;
         top: 48px;
     }
@@ -171,6 +181,12 @@
 }
 
 @media (min-width: 0px) and (max-width: 769px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     .container-fluid-class {
         width: 93%;
     }
@@ -220,7 +236,7 @@
         padding: 0px 64px;
     }
 
-    .hero-section .hero-content-container .form {
+    .hero-section-form {
         width: 472px;
         margin: auto;
     }
@@ -232,24 +248,24 @@
         height: 133px;
     }
 
-    .about {
+    .about-section {
         padding-top: 10px;
     }
 
-    .about .about-imgs {
+    .about-section .about-section-imgs {
         column-gap: 22px;
         margin-bottom: 64px;
     }
 
-    .about .about-text h3 {
+    .about-section .about-section-text h3 {
         font-size: 36px;
     }
 
-    .about .about-text p {
+    .about-section .about-section-text p {
         column-count: 2;
     }
 
-    .about .about-text a span {
+    .about-section .about-section-text a span {
         margin-top: 23px;
     }
 
@@ -261,28 +277,28 @@
         display: none;
     }
 
-    .testimonials-section .carousel-content .item {
+    .testimonials-section .carousel-content .carousel-item {
         grid-template-columns: 198px 1fr;
         padding: 10px 0%;
         column-gap: 25px;
     }
 
-    .testimonials-section .carousel-content .item .txt {
+    .carousel-content .carousel-item .txt {
         padding: 33px 36px;
     }
 
-    .testimonials-section .carousel-content .item .txt .name {
+    .carousel-content .carousel-item .txt .name {
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 9px;
     }
 
-    .testimonials-section .carousel-content .item .txt .message {
+    .carousel-content .carousel-item .txt .message {
         font-size: 14px;
         line-height: 24px;
     }
 
-    .testimonials-section .carousel-content .item .txt .quote {
+    .carousel-content .carousel-item .txt .quote-icon {
         width: 40px;
         height: 31px;
         top: 33px;
@@ -432,12 +448,12 @@
         display: block;
     }
 
-    .hero-section .hero-content-container .txt h1 {
+    .hero-section-content-text h1 {
         font-size: 36px;
         line-height: 40px;
     }
 
-    .hero-section .hero-content-container .txt p {
+    .hero-section-content-text p {
         font-size: 14px;
         line-height: 24px;
         padding: 0px 0px;
@@ -449,34 +465,34 @@
         row-gap: 36px;
     }
 
-    .hero-section .hero-content-container .form {
+    .hero-section-form {
         width: 100%;
         padding: 36px 16px;
         padding-bottom: 56px;
     }
 
-    .hero-section .hero-content-container .form h2 {
+    .hero-section-form h2 {
         font-size: 24px;
         line-height: 29px;
         margin-bottom: 37px;
     }
 
-    .hero-section .hero-content-container .form .inp-row {
+    .form-input-row {
         grid-template-columns: 1fr;
         row-gap: 16px;
     }
 
-    .hero-section .hero-content-container .form label span {
+    .hero-section-form label span {
         font-size: 14px;
         padding-top: 14px;
     }
 
-    .hero-section .hero-content-container .form .empty-tooltip {
+    .empty-tooltip {
         left: 0px;
         right: 0px;
     }
 
-    .hero-section .hero-content-container .form .btn-row a {
+    .form-input-button-row a {
         width: 100%;
     }
 
@@ -485,36 +501,36 @@
         background-size: 393%;
     }
 
-    .about {
+    .about-section {
         padding-top: 0px;
         padding-bottom: 86px;
     }
 
-    .about .about-imgs {
+    .about-section .about-section-imgs {
         display: none;
     }
 
-    .about .about-text h3 {
+    .about-section .about-section-text h3 {
         font-size: 26px;
         line-height: 32px;
         margin-bottom: 18px;
     }
 
-    .about .about-text p {
+    .about-section .about-section-text p {
         column-count: 1;
     }
 
-    .about .about-text p br {
+    .about-section .about-section-text p br {
         display: block;
     }
 
-    .testimonials-section .carousel-content .item {
+    .testimonials-section .carousel-content .carousel-item {
         padding: 0px 0%;
         grid-template-columns: 1fr;
         padding-top: 60px;
     }
 
-    .testimonials-section .carousel-content .item .img {
+    .testimonials-section .carousel-content .carousel-item .img {
         background-color: var(--background-dark);
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
@@ -523,7 +539,7 @@
         overflow: unset;
     }
 
-    .testimonials-section .carousel-content .item .img img {
+    .testimonials-section .carousel-content .carousel-item .img img {
         height: 170px;
         width: 51%;
         margin-left: 32px;
@@ -532,7 +548,7 @@
         border-top-left-radius: 15px;
     }
 
-    .testimonials-section .carousel-content .item .txt {
+    .carousel-content .carousel-item .txt {
         padding: 48px 32px;
         padding-top: 30px;
         border-top-right-radius: 0px;
@@ -543,7 +559,7 @@
         position: relative;
     }
 
-    .testimonials-section .carousel-content .item .txt .quote {
+    .carousel-content .carousel-item .txt .quote-icon {
         top: auto;
         bottom: 100%;
         width: 60px;
