@@ -626,7 +626,7 @@ select.form-input {
 .carousel-content .owl-dots .owl-dot span {
   width: 16px;
   height: 16px;
-  background: #EAEAEA;
+  background: var(--color-faded);
   display: block;
   border-radius: 11px;
 }
@@ -955,7 +955,7 @@ select.form-input {
 
 /*footer-section*/
 .footer-section {
-  background-color: #EAEAEA;
+  background-color: var(--color-faded);
   padding: 38px 0px;
 }
 
