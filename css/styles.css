@@ -71,7 +71,7 @@ a {
 /*home*/
 /*hero section*/
 .hero-section {
-  background-image: url(../assets/img/hero-section.png);
+  background-image: url(../assets/img/hero-section/hero-section.png);
   background-size: cover;
   position: relative;
   padding-top: 20.5px;
@@ -84,7 +84,7 @@ a {
   content: '';
   height: 140px;
   width: 100%;
-  background-image: url(../assets/img/hero-section-curve-1.svg);
+  background-image: url(../assets/img/hero-section/hero-section-curve-1.svg);
   background-repeat: no-repeat;
   z-index: 1;
   background-position: bottom;
@@ -92,7 +92,7 @@ a {
 
 .hero-section::after {
   content: '';
-  background-image: url(../assets/img/hero-section-curve-2.svg);
+  background-image: url(../assets/img/hero-section/hero-section-curve-2.svg);
 }
 
 .hero-section .container-fluid-class::before {
@@ -791,7 +791,7 @@ select.form-input {
 .video-section {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 47% 1fr;
+  grid-template-columns: 51% 1fr;
 }
 
 .video-section .box {
@@ -1010,7 +1010,7 @@ select.form-input {
 }
 
 .thanks {
-  background-image: url(../assets/img/hero-section.png);
+  background-image: url(../assets/img//hero-section/hero-section.png);
   background-size: cover;
   position: relative;
   min-height: 100vh;
