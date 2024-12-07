@@ -210,7 +210,10 @@ const select = document.getElementById("country");
 
 countryList.forEach((country) => {
   const option = document.createElement("option");
-  option.textContent = country;
-  option.value = country;
+  option.textContent = country.replace(/&amp;/g, '&');
+  option.value = country.replace(/&amp;/g, '&');
   select.appendChild(option);
 });
+
+// Set the selected index after all options have been added
+select.selectedIndex = 0;

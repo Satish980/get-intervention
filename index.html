@@ -7,24 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Get an Intervention</title>
 
+
+    <!--stylesheet-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive_styles.css" rel="stylesheet" type="text/css" />
+
     <!--fonts files-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- bootstrap css -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!--for jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!--stylesheet-->
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive_styles.css" rel="stylesheet" type="text/css" />
-
-
-    <!--Jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!--owl carousel-->
+    <!--for carousel-->
     <link href='css/owl.carousel.min.css' rel="stylesheet" type="text/css" />
     <script src='js/owl.carousel.min.js'></script>
 </head>
@@ -36,7 +33,7 @@
             <div class="menu-navbar">
                 <div class="logo">
                     <a href="#">
-                        <img src="assets/img/logo.svg" />
+                        <img src="assets/img/page-logo.svg" />
                     </a>
                 </div>
                 <div class="hamburger-icon">
@@ -63,14 +60,14 @@
                         <div class="form-input-box">
                             <input class="form-input" id="first-name" type="text" />
                             <label for="first-name"><span>First Name</span></label>
-                            <div class="empty-tooltip">
+                            <div class="error-tooltip">
                                 <p>This field can't be empty. Please fill it in.</p>
                             </div>
                         </div>
                         <div class="form-input-box">
                             <input class="form-input" id="last-name" type="text" />
                             <label for="last-name"><span>Last Name</span></label>
-                            <div class="empty-tooltip">
+                            <div class="error-tooltip">
                                 <p>This field can't be empty. Please fill it in.</p>
                             </div>
                         </div>
@@ -79,24 +76,23 @@
                         <div class="form-input-box">
                             <input class="form-input" id="business-email" type="text" />
                             <label for="business-email"><span>Business Email</span></label>
-                            <div class="empty-tooltip">
+                            <div class="error-tooltip">
                                 <p>This field can't be empty. Please fill it in.</p>
                             </div>
                         </div>
                         <div class="form-input-box">
                             <input class="form-input" id="company" type="text" />
                             <label for="company"><span>Company</span></label>
-                            <div class="empty-tooltip">
+                            <div class="error-tooltip">
                                 <p>This field can't be empty. Please fill it in.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="form-input-select-row">
-                        <select onchange="myFunction()" id="country" class="form-input sel focus" placeholder="Country">
-                            <option value=""></option>
+                    <div class="form-input-select-row form-input-select-row-country">
+                        <select onchange="myFunction()" id="country" class="form-input sel focus" required>
                         </select>
-                        <label for="country"><span>Country</span></label>
-                        <div class="empty-tooltip">
+                        <label for="country" class="sel-label"><span>Country</span></label>
+                        <div class="error-tooltip">
                             <p>This field can't be empty. Please fill it in.</p>
                         </div>
                     </div>
@@ -155,7 +151,8 @@
                     </div>
                     <div class="txt">
                         <p class="name">Abbie Harvey</p>
-                        <p class="message">I have been caring for my mom & dad off and on for about-section 10 years now, and I
+                        <p class="message">I have been caring for my mom & dad off and on for about-section 10 years
+                            now, and I
                             know the importance of me being there for appointments. Older people need attention, love
                             and care that they truly deserve.</p>
                         <img class="quote-icon" src="assets/img/icon/quote-icon.svg" />
@@ -167,7 +164,9 @@
                     </div>
                     <div class="txt">
                         <p class="name">John Doe</p>
-                        <p class="message">I’ve been looking after my parents for nearly a decade, and I understand how crucial it is to be present for their appointments. Older adults need compassion, attention, and the care they truly deserve, and being there for them brings me immense fulfillment.</p>
+                        <p class="message">I’ve been looking after my parents for nearly a decade, and I understand how
+                            crucial it is to be present for their appointments. Older adults need compassion, attention,
+                            and the care they truly deserve, and being there for them brings me immense fulfillment.</p>
                         <img class="quote-icon" src="assets/img/icon/quote-icon.svg" />
                     </div>
                 </div>
@@ -177,7 +176,9 @@
                     </div>
                     <div class="txt">
                         <p class="name">Susan Smith</p>
-                        <p class="message">For the past 10 years, I’ve cared for my mom and dad, and it’s taught me how important it is to support them during appointments. Seniors deserve love, attention, and the respect that reflects their lifetime of experiences.</p>
+                        <p class="message">For the past 10 years, I’ve cared for my mom and dad, and it’s taught me how
+                            important it is to support them during appointments. Seniors deserve love, attention, and
+                            the respect that reflects their lifetime of experiences.</p>
                         <img class="quote-icon" src="assets/img/icon/quote-icon.svg" />
                     </div>
                 </div>
@@ -197,7 +198,7 @@
             <div class="txt">
                 <p class="itl"><span>interventions</span> should focus on older adult’s desire for connectedness,
                     participation and independence.</p>
-                <p class="disc">
+                <p class="organize-description">
                     Loneliness and social isolation are growing public health concerns in our aging society. Whilst
                     these experiences occur across the life span, 50% of individuals aged over 60 are at risk of social
                     isolation and one-third will experience some degree of loneliness later in life. It is vital to
@@ -209,39 +210,39 @@
                     institutionalised settings.
                 </p>
             </div>
-            <div class="btns">
-                <a class="c-btn" href="#">
-                    Needs Assesment
+            <div class="organize-buttons-container">
+                <a class="organize-buttons-content" href="#">
+                    Needs Assessment
                     <span></span>
                     <div class="tooltp">
                         <p>The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating
                             the Consumer Voices for Coverage program. </p>
                     </div>
                 </a>
-                <a class="c-btn" href="#">Treatment Planning &<br />Placement<span></span>
+                <a class="organize-buttons-content" href="#">Treatment Planning &<br />Placement<span></span>
                     <div class="tooltp">
                         <p>Patients can better understand medical procedures, discharge instructions, etc.</p>
                     </div>
                 </a>
-                <a class="c-btn" href="#">Transportation & Logistics<span></span>
+                <a class="organize-buttons-content" href="#">Transportation & Logistics<span></span>
                     <div class="tooltp">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore.</p>
                     </div>
                 </a>
-                <a class="c-btn" href="#">Insuarance Advocacy<span></span>
+                <a class="organize-buttons-content" href="#">Insurance Advocacy<span></span>
                     <div class="tooltp">
                         <p>We’re experienced in our individual crafts and understand how each one of our roles impacts
                             your plan holistically.</p>
                     </div>
                 </a>
-                <a class="c-btn" href="#">Employment Advocacy<span></span>
+                <a class="organize-buttons-content" href="#">Employment Advocacy<span></span>
                     <div class="tooltp">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore.</p>
                     </div>
                 </a>
-                <a class="c-btn" href="#">Aftercare Planning<span></span>
+                <a class="organize-buttons-content" href="#">Aftercare Planning<span></span>
                     <div class="tooltp">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore.</p>
@@ -255,35 +256,35 @@
         <div class="txt">
             <div class="box">
                 <h5 class="upper-case"><span>watch</span> the video</h5>
-                <div class="check-box">
-                    <img src="assets/img/icon/checkmark.svg" />
+                <div class="check-tick-box">
+                    <img src="assets/img/icon/tick-check.svg" />
                     <p>
-                        <span>Needs Assesment</span>
+                        <span>Needs Assessment</span>
                         The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the
                         Consumer Voices for Coverage program.
                     </p>
                 </div>
-                <div class="check-box">
-                    <img src="assets/img/icon/checkmark.svg" />
+                <div class="check-tick-box">
+                    <img src="assets/img/icon/tick-check.svg" />
                     <p>
-                        <span>Insuarance Advocacy</span>
+                        <span>Insurance Advocacy</span>
                         We’re experienced in our individual crafts and understand how each one of our roles impacts your
                         plan holistically.
                     </p>
                 </div>
-                <div class="check-box">
-                    <img src="assets/img/icon/checkmark.svg" />
+                <div class="check-tick-box">
+                    <img src="assets/img/icon/tick-check.svg" />
                     <p>
                         <span>Treatment Planning & Placement</span>
                         Patients can better understand medical procedures, discharge instructions, etc.
                     </p>
                 </div>
             </div>
-            <img class="video-bac" src="assets/img/video-section-color-img.png" />
-            <img class="video-bac video-bac2" src="assets/img/video-section-black-img.png" />
+            <img class="video-section-back" src="assets/img/video-section-color-img.png" />
+            <img class="video-section-back video-section-back2" src="assets/img/video-section-black-img.png" />
         </div>
         <div class="video-img" onclick="playPause()">
-            <video id="sampleVideo" class="bac" width="320" height="240">
+            <video id="sampleVideo" class="back" width="320" height="240">
                 <source src="assets/video/taking-care.mp4" type="video/mp4">
             </video>
             <span class="play" href="#">
@@ -293,7 +294,7 @@
                         d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
                 </svg>
             </span>
-            <img class="sm-logo" src="assets/img/logo.svg" />
+            <img class="page-logo" src="assets/img/page-logo.svg" />
         </div>
     </section>
     <!-- footer section -->
