@@ -350,6 +350,10 @@ a {
   display: block;
 }
 
+.form-input-box.invalid-email .email-error {
+  display: block;
+}
+
 .error-tooltip p {
   font-size: 13px;
   line-height: 16px;

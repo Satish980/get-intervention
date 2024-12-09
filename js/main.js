@@ -12,7 +12,7 @@ $(window).on('load', () => {
 $(".carousel-content").owlCarousel({
     nav: false,
     dots: true,
-    loop: false,
+    loop: true,
     responsive: {
         0: { items: 1 },
         600: { items: 1 },
@@ -49,10 +49,11 @@ $(".hamburger-icon").click(() => {
 
 const validate = () => {
     // Removing all existing error states first
-    $(".form-input-box .form-input").each(function() {
-        $(this).parent().removeClass('empty');
+    $(".form-input-box .form-input").each(function () {
+        $(this).parent().removeClass("empty");
+        $(this).parent().removeClass("invalid-email");
     });
-    $('.form-input-select-row').removeClass('empty');
+    $(".form-input-select-row").removeClass("empty");
 
     // Checking fields one by one and showing first error found
     let isValid = true;
@@ -60,28 +61,40 @@ const validate = () => {
 
     // Checking each input field
     const inputs = $(".form-input-box .form-input");
-    for(let i = 0; i < inputs.length; i++) {
-        if (!$(inputs[i]).val()) {
-            $(inputs[i]).parent().addClass('empty');
+    for (let i = 0; i < inputs.length; i++) {
+        const input = $(inputs[i]);
+        const value = input.val();
+        const parent = input.parent();
+
+        if (!value) {
+            parent.addClass("empty");
             isValid = false;
-            break; // Showing only first error
-        } else {
-            num += 1;
+            break; // Show only the first error
         }
+
+        // Additional check for email field
+        if (input.hasClass("input-email") && !value.includes("@")) {
+            parent.addClass("invalid-email");
+            isValid = false;
+            break; // Show only the first error
+        }
+
+        num += 1;
     }
 
     // Only checking dropdown if no input field errors
-    if (isValid && $('.form-input-select-row select').val() === '') {
-        $('.form-input-select-row').addClass('empty');
+    if (isValid && $(".form-input-select-row select").val() === "") {
+        $(".form-input-select-row").addClass("empty");
         isValid = false;
     } else if (isValid) {
         num += 1;
     }
 
     if (num === 5) {
-        document.location = 'thanks.html';
+        document.location = "thanks.html";
     }
 };
+
 
 $(document).click(() => {
     $(".form-input-box .form-input").each(function() {

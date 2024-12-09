@@ -76,12 +76,13 @@
                     </div>
                     <div class="form-input-row">
                         <div class="form-input-box">
-                            <input class="form-input" id="business-email" type="text" />
+                            <input class="form-input input-email" id="business-email" type="email" />
                             <label for="business-email"><span>Business Email</span></label>
-                            <div class="error-tooltip">
-                                <p>This field can't be empty. Please fill it in.</p>
+                            <div class="error-tooltip email-error">
+                                <p>Enter a valid email address (must include "@").</p>
                             </div>
                         </div>
+                        
                         <div class="form-input-box">
                             <input class="form-input" id="company" type="text" />
                             <label for="company"><span>Company</span></label>
@@ -89,7 +90,7 @@
                                 <p>This field can't be empty. Please fill it in.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                     <div class="form-input-select-row form-input-select-row-country">
                         <select onchange="myFunction()" id="country" class="form-input sel focus" required>
                         </select>
