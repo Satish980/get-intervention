@@ -89,3 +89,10 @@ Get Intervention is a responsive single-page website designed to help connect in
 - Owl Carousel 2
 - Montserrat font family
 - Custom icon set
+
+
+Changes:
+Section 1 - (Contact Us:  submits without @ email and change Country text box currently set in Afghanistan by default)
+Review We Understand section (92% success rate hover movement, carousel movement should be continuous)
+We Can Organize Everything (text hover pop up: replace lorem ipsum text)
+Watch the Video - (video pop up)
