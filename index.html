@@ -92,11 +92,15 @@
                         </div>
                     </div>                    
                     <div class="form-input-select-row form-input-select-row-country">
-                        <select onchange="myFunction()" id="country" class="form-input sel focus" required>
-                        </select>
-                        <label for="country" class="sel-label"><span>Country</span></label>
-                        <div class="error-tooltip">
-                            <p>This field can't be empty. Please fill it in.</p>
+                        <div class="form-input-box">
+                            <select id="country" class="form-input" required>
+                            </select>
+                            <label for="country" class="sel-label">
+                                <span>Country</span>
+                            </label>
+                            <div class="error-tooltip">
+                                <p>This field can't be empty. Please fill it in.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="form-input-button-row">
@@ -283,7 +287,7 @@
             <img class="video-section-back" src="assets/img/video-section/video-section-color-img.png" />
             <img class="video-section-back video-section-back2" src="assets/img/video-section/video-section-black-img.png" />
         </div>
-        <div class="video-img" onclick="playPause()">
+        <div class="video-img" onclick="openVideoModal()">
             <video id="sampleVideo" class="back" width="320" height="240">
                 <source src="assets/video/taking-care.mp4" type="video/mp4">
             </video>
@@ -297,6 +301,17 @@
             <img class="page-logo" src="assets/img/page-logo.svg" />
         </div>
     </section>
+
+        <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+            <video id="videoModalVideo" width="100%" controls>
+                <source src="assets/video/taking-care.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
     <!-- footer section -->
     <section class="footer-section">
         <div class="container-fluid-class">

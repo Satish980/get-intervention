@@ -29,23 +29,31 @@ $('.testimonials-section .arrow-right').click(() => {
     owl.trigger('next.owl.carousel');
 });
 
-/* For video */
-const playPause = () => {
-    const video = document.querySelector("#sampleVideo");
-    if (video.paused) {
-        video.play();
-        $('.play').addClass("plo");
-    } else {
-        video.pause();
-        $('.play').removeClass("plo");
-    }
-};
-
 $(".hamburger-icon").click(() => {
     $('.menu-navbar ul').animate({
         height: 'toggle'
     });
 });
+
+// Opening the video modal when the thumbnail is clicked
+function openVideoModal() {
+    document.getElementById("videoModal").style.display = "flex";
+    document.getElementById("videoModalVideo").play();
+}
+
+// Closing the video modal
+function closeVideoModal() {
+    document.getElementById("videoModal").style.display = "none";
+    document.getElementById("videoModalVideo").pause();
+}
+
+// Closing video modal if clicked outside of the video area
+window.onclick = function(event) {
+    if (event.target === document.getElementById("videoModal")) {
+        closeVideoModal();
+    }
+}
+
 
 const validate = () => {
     // Removing all existing error states first
@@ -90,7 +98,9 @@ const validate = () => {
         num += 1;
     }
 
-    if (num === 5) {
+    console.log("=====", num)
+
+    if (num >= 5) {
         document.location = "thanks.html";
     }
 };
@@ -105,4 +115,14 @@ $(document).click(() => {
 
 $(".form-input-button-row").click((e) => {
     e.stopPropagation();
+});
+
+document.getElementById('country').addEventListener('focus', function() {
+    this.classList.add('focus');
+});
+
+document.getElementById('country').addEventListener('blur', function() {
+    if (this.value === "") {
+        this.classList.remove('focus');
+    }
 });

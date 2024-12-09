@@ -208,12 +208,17 @@ const countryList = [
 
 const select = document.getElementById("country");
 
+// Create and append a placeholder option
+const placeholderOption = document.createElement("option");
+placeholderOption.textContent = "";
+placeholderOption.value = "";
+placeholderOption.disabled = true;
+placeholderOption.selected = true;
+select.appendChild(placeholderOption);
+
 countryList.forEach((country) => {
   const option = document.createElement("option");
   option.textContent = country.replace(/&amp;/g, '&');
   option.value = country.replace(/&amp;/g, '&');
   select.appendChild(option);
 });
-
-// Set the selected index after all options have been added
-select.selectedIndex = 0;
