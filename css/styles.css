@@ -532,11 +532,11 @@ select.form-input {
 }
 
 .about-section-text a:hover {
-  transform: translateY(-3px);
+  transform: translateY(-6px);
 }
 
 .about-section-text a:focus {
-  transform: translateY(0px);
+  transform: translateY(-6px);
 }
 
 .about-section-text a span {
