@@ -106,8 +106,6 @@ const validate = () => {
         num += 1;
     }
 
-    console.log("=====", num)
-
     if (num >= 5) {
         document.location = "thanks.html";
     }
