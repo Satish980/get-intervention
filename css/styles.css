@@ -429,6 +429,23 @@ select.form-input {
   background-position: right 16px center;
 }
 
+select {
+  background-color: #f0f0f0; /* Change this to your desired background color */
+}
+
+/* Style the dropdown when focused */
+select:focus {
+  background-color: #e0e0e0; /* Slightly different color for focus */
+  outline: none; /* Remove the default focus outline */
+  border-color: #666; /* Highlight border */
+}
+
+/* Style the options inside the dropdown */
+select option {
+  background-color: #fff; /* Background color for the options */
+  color: #333; /* Text color for the options */
+}
+
 .form-input-button-row {
   margin-top: 41px;
   text-align: center;

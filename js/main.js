@@ -80,11 +80,19 @@ const validate = () => {
             break; // Show only the first error
         }
 
-        // Additional check for email field
-        if (input.hasClass("input-email") && !value.includes("@")) {
-            parent.addClass("invalid-email");
-            isValid = false;
-            break; // Show only the first error
+        // Comprehensive email validation
+        if (input.hasClass("input-email")) {
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(value)) {
+                parent.addClass("invalid-email");
+                if (value === "") {
+                    parent.attr("data-error", "Email is required");
+                } else {
+                    parent.attr("data-error", "Please enter a valid email address");
+                }
+                isValid = false;
+                break;
+            }
         }
 
         num += 1;
