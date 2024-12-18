@@ -889,7 +889,7 @@ select option {
   position: absolute;
   top: 0px;
   left: -12%;
-  width: 124%;
+  width: 122%;
   height: 100%;
   z-index: -1;
 }
@@ -932,11 +932,10 @@ select option {
   background: rgba(91, 200, 175, 0.8);
   border: 2px solid #FFFFFF;
   border-radius: 100px;
-  top: 0px;
+  top: 20%;
+  right: 20%;
   bottom: 0px;
   z-index: 2;
-  left: 0px;
-  right: 0px;
   margin: auto;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
