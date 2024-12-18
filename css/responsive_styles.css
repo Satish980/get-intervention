@@ -349,12 +349,14 @@
         height: 127%;
         z-index: -1;
         transform: rotate(90deg);
+        object-fit: contain;
     }
 
     .video-section .txt .video-section-back2 {
         left: -13%;
         top: -23%;
         z-index: -2;
+        transform: rotate(90deg);
     }
 
     .video-section .video-img .play {
@@ -617,10 +619,12 @@
         left: -13%;
         width: 220%;
         height: 187%;
+        object-fit: contain;
     }
 
     .video-section .txt .video-section-back2 {
         left: -11%;
+        object-fit: contain;
     }
 
     .video-section .txt h5 {
@@ -636,7 +640,7 @@
     }
 
     .video-section .txt .check-tick-box p {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 24px;
     }
 

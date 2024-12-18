@@ -132,3 +132,23 @@ document.getElementById('country').addEventListener('blur', function() {
         this.classList.remove('focus');
     }
 });
+
+function updateVideoSectionBackground() {
+    const videoSectionBack = document.querySelector('.video-section-back');
+    const videoSectionBack2 = document.querySelector('.video-section-back2');
+    
+    if (window.innerWidth <= 768) {
+        // videoSectionBack.src = 'assets/img/video-section/mobile-background-1.png';
+        // videoSectionBack2.src = 'assets/img/video-section/mobile-background-2.png';
+    } 
+    // else {
+    //     videoSectionBack.src = 'assets/img/video-section/video-bac.svg';
+    //     // videoSectionBack2.src = 'assets/img/video-section/video-bac-2.svg';
+    // }
+}
+
+// Run on page load
+updateVideoSectionBackground();
+
+// Run on window resize
+window.addEventListener('resize', updateVideoSectionBackground);
