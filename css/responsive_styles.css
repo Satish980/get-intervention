@@ -101,6 +101,10 @@
         font-size: 17px;
     }
 
+    .about-section-text h3::after {
+        left: 45%;
+    }
+
     .testimonials-section .container-fluid-class {
         grid-template-columns: 8% 1fr 8%;
     }
@@ -273,6 +277,10 @@
 
     .about-section .about-section-text h3 {
         font-size: 36px;
+    }
+
+    .about-section-text h3::after {
+        left: 50%;
     }
 
     .about-section .about-section-text p {
@@ -525,6 +533,10 @@
         padding-bottom: 86px;
     }
 
+    .about-section-text h3::after {
+        left: 74%;
+    }
+
     .about-section .about-section-imgs {
         display: none;
     }
@@ -717,6 +729,10 @@
         width: 255%;
         height: 175%;
     } */
+
+    .about-section-text h3::after {
+        left: 77%;
+    }
 
     .video-section .txt .video-section-back, .video-section .txt .video-section-back2 {
         /* top: -56%; */
